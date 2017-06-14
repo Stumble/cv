@@ -93,8 +93,8 @@
 \location{Aug. 2015 – present | Internet Research Lab, UCLA}
 
 \begin{tightemize}
-\item Domain Name Service for Named Data Networking (NDNS) EXPAND THIS PART. Links: \href{https://named-data.net/publications/2017-icccn-ndns/}{paper} \textbullet{} \href{https://gerrit.named-data.net/#/q/project:ndns}{gerrit}
-\item Implementation and evaluation of several NDN cache policies based on NDNsim ADD LINK.
+\item Domain Name Service for Named Data Networking (NDNS). Design and implementation of: the NDNS security schema (including a NEC-like denial of existence Links), cache resolver, validator, and a certificate fetcher for NDNS. Publication at ICCCN: \href{https://named-data.net/publications/2017-icccn-ndns/}{NDNS}. Source code: \href{https://gerrit.named-data.net/#/q/project:ndns}{gerrit}
+\item Implementation and evaluation of several NDN cache policies based on NDNsim: \href{https://github.com/ndncomm/nfd-caching-policies}{github repo}.
 %% \item Design and implementation of a hop-by-hop congestion control algorithm in NDN.
 %% \item Software development in Named-data Networking Forwarding Daemon (NFD)
 \end{tightemize}
@@ -113,11 +113,11 @@
 \sectionsep
 
 \runsubsection{Selected Projects}
-\descript{\break Software verification and visualization, IoT, Hardware}
+\descript{\break Software formal verification and visualization, IoT, Hardware...}
 \begin{tightemize}
-\item TrustCoq
-\item DUCK
-\item Smart Gas Guardian(LINK): a smart home device prototype that could automatically adjust house’s moisture and temperature, detect hazardous gases using MQ series sensor, and send alert message to user’s phone if an emergency happens, using Raspberry Pi as gateway, connected to devices via Bluetooth.
+\item \href{https://github.com/Stumble/TrustCoq}{TrustCoq}: Using machine-checked formal verification technique(Coq) to proof termination on a domain-specific language. The language describes the security schema of NDN applications. Specifically, this project formally proofef that, as long as a polcy, described in this language, can pass the termination check, it will terminate in a finite number of steps.
+\item \href{https://github.com/Stumble/duck}{DUCK}: a dynamic universal software system visualization kit. This tool execute syntactical analysis on source code to produce interactive query-able figures to help programmer understand the software structure. The query-able interative feature addresses the scalability issue of visulization by letting user specify the what they want. Currently, C++ are supportted, based on libclang.
+\item \href{https://github.com/Stumble/smartGG}{Smart Gas Guardian}: a smart home device prototype that could automatically adjust house’s moisture and temperature, detect hazardous gases using MQ series sensor, and send alert message to user’s phone if an emergency happens, using Raspberry Pi as gateway, connected to devices via Bluetooth.
 \item A pipelined CPU implementation on FPGA chips with the MIPS32 instruction set, using High-Level Synthesis Technique of Xilinx.
 \end{tightemize}
 
