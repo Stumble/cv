@@ -131,10 +131,8 @@
 \descript{| Software Engineering Intern}
 \location{Jun. 2017 – Sept. 2017 | MTV, California, USA}
 \begin{tightemize}
-\item A regression test tool that display image differences between two version of rendering servers against sample requests.
-\item A log search tool that filters out a set of logs that matching user-provided requiments.
-%% \item Design and implementation of a hop-by-hop congestion control algorithm in NDN.
-%% \item Software development in Named-data Networking Forwarding Daemon (NFD)
+\item A screen-diff test tool: when a rendering-server-related code change is submitted for code review, this tool will be triggered automatically, to build and run two different version of rendering server, replay traffic, render the returned result HTML content into images, and compare the rendered image. Unexpected differences will be captured and screen-diff image, alone with html differences, will be reported to the submitter.
+\item A protobuf search tool: For a given query (SQL-like syntax on semi-structure protobuf fields), returns a set of matched protobufs. This tool extracts ~1M protobufs out from ~30GB binary logs hourly, indexes specified fields, and save them to a NoSQL database. It can return a result set in less than one second, out from ~30M protobufs. The query syntx support exact or fuzzy match, on all types of protobuf fields (e.g. int, string, enum, and nested fields..), and it supports the 'has-a' query on 'repeated fields' (array), which can be combined with both fuzzy/exact match.
 \end{tightemize}
 \sectionsep
 
